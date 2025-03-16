@@ -238,3 +238,45 @@ We will work with **cdystonia.csv**, a dataset from a randomized controlled tria
 - Interpret the distribution of participants across different study locations.
 
 ---
+
+# 🔄 Data Wrangling with Pandas: Data Transformation  
+
+In this exercise, we will explore various **data transformation techniques** in Pandas, including **handling duplicates, replacing values, and creating indicator variables**. These transformations help in **cleaning, structuring, and preparing** data for analysis.
+
+We will apply these techniques to datasets such as **vessels.csv** (containing vessel information) and **cdystonia.csv** (a dataset from a clinical trial on cervical dystonia).
+
+---
+
+## ⚙ **Exercise 6: Data Transformation in Pandas**
+
+### **Task 1: Identifying and Removing Duplicates**
+- Import the **vessels.csv** dataset.
+- Identify duplicate records based on the vessel names.
+- Remove duplicate vessel names while keeping only the first occurrence.
+- Verify that the duplicates have been removed.
+
+---
+
+## 🔢 **Task 2: Replacing Categorical Values with Numeric Codes**
+- Import the **cdystonia.csv** dataset.
+- Identify categorical columns that should be converted into numerical values.
+- Replace treatment group names with numeric values:
+  - Assign `0` for Placebo.
+  - Assign `1` for 5000U.
+  - Assign `2` for 10000U.
+- Verify the transformation by checking the first few rows of the modified column.
+
+---
+
+## 🔄 **Task 3: Replacing Numeric Values with Categorical Labels**
+- Convert the numeric treatment values back into categorical labels.
+- Ensure that the transformation correctly restores the original treatment names.
+
+---
+
+## 📊 **Task 4: Creating Indicator Variables (Dummy Variables)**
+- Identify a categorical column in **vessels.csv** that would be useful as indicator variables.
+- Convert this categorical column into **dummy variables**.
+- Verify that the new DataFrame contains **binary indicator columns**.
+
+---
