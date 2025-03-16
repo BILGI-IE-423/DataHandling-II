@@ -91,5 +91,53 @@ Our goal is to clean, transform, and analyze this data efficiently using Pandas.
 
 ---
 
+# 🔗 Data Wrangling with Pandas: Merging and Joining DataFrames  
+
+Now that we have the vessel transit information, we want to enhance our dataset by adding details about the vessels themselves. The dataset **vessel_information.csv** contains additional information about each vessel, which we will merge with our **transit_segments.csv** dataset.
+
+The challenge is that multiple vessels have traveled through multiple segments, resulting in a **one-to-many relationship** between these datasets. We will use Pandas' merging and joining capabilities to combine these datasets effectively.
+
+---
+
+## 🚢 **Exercise 3: Merging and Joining DataFrames in Pandas**
+
+### **Task 1: Importing and Exploring the Datasets**
+- Import the dataset **transit_segments.csv** and store it as `segments`.
+- Import the dataset **vessel_information.csv** and store it as `vessels`, setting the column **mmsi** as the index.
+- Display the first **5 rows** of both datasets.
+- Check for missing values in both datasets.
+
+---
+
+### **Task 2: Merging DataFrames using Common Keys**
+- Merge `segments` and `vessels` using the **mmsi** column.
+- Ensure that all vessel information is correctly assigned to its respective segment.
+- Display the first **5 rows** of the merged dataset.
+
+---
+
+### **Task 3: Exploring Different Types of Joins**
+- Perform the following types of joins and explain the differences:
+  - **Inner Join** (default) – Include only matching records.
+  - **Outer Join** – Include all records, filling missing values where necessary.
+  - **Left Join** – Include all records from `segments`, and only matching records from `vessels`.
+  - **Right Join** – Include all records from `vessels`, and only matching records from `segments`.
+
+---
+
+### **Task 4: Handling Conflicting Column Names**
+- Add a new column named **type** to `segments` and set it to `'Transit'`.
+- Perform a merge with `vessels` and observe how Pandas handles duplicate column names.
+- Rename conflicting column names by specifying **custom suffixes**.
+
+---
+
+### **Task 5: Verifying and Cleaning the Merged Data**
+- Check for and handle any missing values in the merged dataset.
+- Drop any unnecessary or duplicate columns after merging.
+- Reset the index of the merged DataFrame if needed.
+
+---
+
 
 
