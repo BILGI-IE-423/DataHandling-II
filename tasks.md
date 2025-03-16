@@ -187,3 +187,54 @@ In this exercise, we will explore **fixing merge operations** and **concatenatin
 
 ---
 
+# 🔄 Data Wrangling with Pandas: Reshaping DataFrames  
+
+In this exercise, we will explore different ways to **reshape** a dataset using Pandas. We will focus on **stacking, pivoting, melting, and creating pivot tables** to transform a dataset into different formats suitable for analysis.
+
+We will work with **cdystonia.csv**, a dataset from a randomized controlled trial on botulinum toxin type B (BotB) in patients with cervical dystonia. The dataset contains repeated measurements for each patient, making it suitable for **longitudinal data analysis**.
+
+---
+
+## 🏥 **Exercise 5: Reshaping DataFrames in Pandas**
+
+### **Task 1: Importing and Exploring the Dataset**
+- Import the dataset **cdystonia.csv**.
+- Display the first few rows of the dataset.
+- Check the data types and structure of the dataset.
+- Identify which columns contain repeated measurements for each patient.
+
+---
+
+## 🔀 **Task 2: Stacking and Unstacking Data**
+- Convert the dataset into a **stacked format** where multiple columns are converted into rows.
+- Verify the structure of the stacked DataFrame.
+- Convert the stacked data **back to its original format** using an unstacking method.
+
+---
+
+## 📊 **Task 3: Pivoting Data**
+- Transform the dataset from **long format to wide format** using a pivoting method.
+- Set the patient identifier as the **index** and measurement weeks as **columns**.
+- Ensure that the values of the response variable (`twstrs`) are correctly placed in the table.
+
+---
+
+## 🔄 **Task 4: Converting from Wide to Long Format**
+- Convert the **wide format back to long format** using a melting method.
+- Specify identifier columns that should remain unchanged.
+- Ensure that the melted DataFrame contains **two columns**: one for the time variable and one for the measurement values.
+
+---
+
+## 📌 **Task 5: Creating Pivot Tables**
+- Create a **pivot table** that summarizes the maximum TWSTRS score per treatment group and site.
+- Display the **hierarchical index** structure of the pivot table.
+- Analyze the differences in TWSTRS scores across sites and treatments.
+
+---
+
+## 🔢 **Task 6: Performing Cross-tabulation**
+- Generate a **cross-tabulation table** to count the number of male and female participants at each study site.
+- Interpret the distribution of participants across different study locations.
+
+---
