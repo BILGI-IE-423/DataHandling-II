@@ -139,5 +139,51 @@ The challenge is that multiple vessels have traveled through multiple segments, 
 
 ---
 
+# 🔗 Data Wrangling with Pandas: Merging and Concatenating DataFrames  
 
+In this exercise, we will explore **fixing merge operations** and **concatenating DataFrames** efficiently. We will work with vessel transit data and microbiome datasets to understand how to merge, append, and combine data.
+
+---
+
+## 🚢 **Exercise 4: Fixing Merges and Concatenating DataFrames**
+
+### **Task 1: Fixing an Incorrect Merge**
+- Import the datasets **transit_segments.csv** and **vessel_information.csv**.
+- Attempt to merge the datasets and observe if the result is empty.
+- Identify the reason why the merge does not return any results.
+- Apply the correct merging method to ensure that vessel information is correctly assigned to the transit segments.
+- Verify that the merged DataFrame contains valid records.
+
+---
+
+## 🦠 **Task 2: Importing and Exploring Microbiome Data**
+- Import the microbiome datasets **microbiome_MID1.xls** and **microbiome_MID2.xls**.
+- Read the datasets while ensuring that the first column is used as the index.
+- Standardize the column names to maintain consistency across both datasets.
+- Display the shape and structure of both datasets.
+- Check for missing values and assess the uniqueness of the index.
+
+---
+
+## 🔄 **Task 3: Concatenating Data Vertically (Appending Rows)**
+- Concatenate the two microbiome datasets by stacking their rows.
+- Verify the shape of the resulting DataFrame.
+- Check if there are any duplicate index values after concatenation.
+- If duplicates exist, determine how they should be handled.
+
+---
+
+## 📊 **Task 4: Concatenating Data Horizontally (Merging Columns)**
+- Concatenate the two microbiome datasets by aligning them column-wise.
+- Verify the shape of the concatenated DataFrame.
+- Ensure that indices are correctly matched and aligned after concatenation.
+
+---
+
+## 🔍 **Task 5: Handling Duplicates After Concatenation**
+- Identify any duplicate indices in the concatenated dataset.
+- Implement a method to handle duplicate index values appropriately.
+- If necessary, aggregate duplicate entries by summing their values.
+
+---
 
