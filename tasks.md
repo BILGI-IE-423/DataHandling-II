@@ -57,32 +57,6 @@ Our goal is to clean, transform, and analyze this data efficiently using Pandas.
 - Extract the **hour** from `st_time` and create a new column named **start_hour**.
 - Filter the dataset to show only records where the month is **February**.
 
----
-
-### **Task 3: Analyzing Vessel Speed and Distance**
-- Compute and display the **average segment length (`seg_length`)**.
-- Compute and display the **average speed (`avg_speed`)**.
-- Identify the **fastest** and **slowest** recorded vessel speeds.
-- Create a **histogram** of `seg_length` to visualize the distribution.
-- Apply a **log transformation** to `seg_length` and plot the histogram again.
-
----
-
-### **Task 4: Filtering and Grouping Data**
-- Find all transit records where:
-  - The vessel speed is greater than **20 knots**.
-  - The segment length is greater than **50 km**.
-- Group the data by **month** and compute the **average segment length per month**.
-- Identify the **month with the highest average transit duration**.
-
----
-
-### **Task 5: Resampling and Aggregation**
-- Set `st_time` as the **index** of the dataset.
-- Resample the data by **week** and compute the **total number of transits per week**.
-- Resample by **month** and compute the **average speed per month**.
-
----
 
 # 🔗 Data Wrangling with Pandas: Merging and Joining DataFrames  
 
