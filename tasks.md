@@ -23,13 +23,6 @@ Now that we have explored the basics of Pandas, let's move on to more advanced t
   - The column contains random dates between **2010-01-01 and 2023-01-01**.
   - Extract the **day of the week** for each date.
 
-### **Task 3: Handling Time Series Data**
-- Import the dataset **timeseries.csv**.
-- Convert the column `date` to a **datetime object**.
-- Set the **date column as an index**.
-- Resample the data to show the **monthly average**.
-- Extract the subset of data from **2019 to 2021** and display it.
-
 ---
 
 # 🌊 Data Wrangling with Pandas: Vessel Transit Data  
