@@ -69,10 +69,8 @@ The challenge is that multiple vessels have traveled through multiple segments, 
 ## 🚢 **Exercise 3: Merging and Joining DataFrames in Pandas**
 
 ### **Task 1: Importing and Exploring the Datasets**
-- Import the dataset **transit_segments.csv** and store it as `segments`.
 - Import the dataset **vessel_information.csv** and store it as `vessels`, setting the column **mmsi** as the index.
-- Display the first **5 rows** of both datasets.
-- Check for missing values in both datasets.
+- Display the first **5 rows**.
 
 ---
 
