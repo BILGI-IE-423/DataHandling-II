@@ -59,14 +59,7 @@ Our goal is to clean, transform, and analyze this data efficiently using Pandas.
 
 ---
 
-### **Task 3: Calculating Transit Duration**
-- Create a new column **transit_duration** that calculates the **difference** between `end_time` and `st_time`.
-- Convert `transit_duration` to **hours** and display the first 10 rows.
-- Find the **longest** and **shortest** transit durations.
-
----
-
-### **Task 4: Analyzing Vessel Speed and Distance**
+### **Task 3: Analyzing Vessel Speed and Distance**
 - Compute and display the **average segment length (`seg_length`)**.
 - Compute and display the **average speed (`avg_speed`)**.
 - Identify the **fastest** and **slowest** recorded vessel speeds.
@@ -75,7 +68,7 @@ Our goal is to clean, transform, and analyze this data efficiently using Pandas.
 
 ---
 
-### **Task 5: Filtering and Grouping Data**
+### **Task 4: Filtering and Grouping Data**
 - Find all transit records where:
   - The vessel speed is greater than **20 knots**.
   - The segment length is greater than **50 km**.
@@ -84,7 +77,7 @@ Our goal is to clean, transform, and analyze this data efficiently using Pandas.
 
 ---
 
-### **Task 6: Resampling and Aggregation**
+### **Task 5: Resampling and Aggregation**
 - Set `st_time` as the **index** of the dataset.
 - Resample the data by **week** and compute the **total number of transits per week**.
 - Resample by **month** and compute the **average speed per month**.
